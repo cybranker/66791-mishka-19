@@ -35,7 +35,81 @@
     </header>
 
     <main>
+      <h1 class="page-title">Вязание на заказ</h1>
 
+      <section class="order-data">
+        <h2 class="visually-hidden">Данные заказа</h2>
+        <p class="order-data__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order-data__form" action="https://echo.htmlacademy.ru">
+          <h3 class="order-data__title">Тип</h3>
+          <ul class="order-data__options">
+            <li class="order-data__option">
+              <input class="order-data__radio" id="type-accessory" type="radio" name="type-group" value="accessory" checked>
+              <label for="type-accessory">Аксессуар для интерьера</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__radio" id="type-kids-toy" type="radio" name="type-group" value="kids-toy">
+              <label for="type-kids-toy">Детская игрушка</label>
+            </li>
+          </ul>
+          <h3 class="order-data__title">Цвет</h3>
+          <ul class="order-data__options">
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-white" type="checkbox" name="color-white" checked>
+              <label for="color-white">Белый</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-gray" type="checkbox" name="color-gray" checked>
+              <label for="color-gray">Серый</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-tiffany" type="checkbox" name="color-tiffany">
+              <label for="color-tiffany">&laquo;Тиффани&raquo;</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-black" type="checkbox" name="color-black">
+              <label for="color-black">Черный</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-pink" type="checkbox" name="color-pink">
+              <label for="color-pink">Розовый</label>
+            </li>
+            <li class="order-data__option">
+              <input class="order-data__checkbox" id="color-orange" type="checkbox" name="color-orange">
+              <label for="color-orange">Оранжевый</label>
+            </li>
+          </ul>
+          <h3 class="order-data__title">ФИО</h3>
+          <ul class="order-data__options">
+            <li class="order-data__option">
+              <label for="order-data-name">Имя:</label>
+              <input class="order-data__input" id="order-data-name" type="text" name="name" placeholder="Введите ваше имя*" required>
+            </li>
+            <li class="order-data__option">
+              <label for="order-data-surname">Фамилия:</label>
+              <input class="order-data__input" id="order-data-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+            </li>
+            <li class="order-data__option">
+              <label for="order-data-patronymic">Отчество:</label>
+              <input class="order-data__input" id="order-data-patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+            </li>
+          </ul>
+          <h3 class="order-data__title">Тел</h3>
+          <p class="order-data__option">
+            <input class="order-data__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </p>
+          <h3 class="order-data__title">E-mail</h3>
+          <p class="order-data__option">
+            <input class="order-data__input" type="email" name="email" placeholder="Ваш Email*" required>
+          </p>
+          <h3 class="order-data__title">Доп</h3>
+          <p class="order-data__option">
+            <textarea name="wish" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+          <small class="order-data__legend">*Поля обязательны для заполнения</small>
+          <button class="order-data__button button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
