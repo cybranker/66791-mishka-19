@@ -35,7 +35,87 @@
     </header>
 
     <main>
+      <h1 class="page-title">Вязание на заказ</h1>
 
+      <section class="order-data">
+        <h2 class="visually-hidden">Данные заказа</h2>
+        <p class="order-data__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order-data__form" action="https://echo.htmlacademy.ru">
+          <fieldset class="order-data__options">
+            <legend class="order-data__title">Тип</legend>
+            <ul>
+              <li class="order-data__option">
+                <input class="order-data__radio" id="type-accessory" type="radio" name="type-group" value="accessory" checked>
+                <label for="type-accessory">Аксессуар для интерьера</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__radio" id="type-kids-toy" type="radio" name="type-group" value="kids-toy">
+                <label for="type-kids-toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="order-data__options">
+            <legend class="order-data__title">Цвет</legend>
+            <ul>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-white" type="checkbox" name="color-white" checked>
+                <label for="color-white">Белый</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-gray" type="checkbox" name="color-gray" checked>
+                <label for="color-gray">Серый</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-tiffany" type="checkbox" name="color-tiffany">
+                <label for="color-tiffany">&laquo;Тиффани&raquo;</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-black" type="checkbox" name="color-black">
+                <label for="color-black">Черный</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-pink" type="checkbox" name="color-pink">
+                <label for="color-pink">Розовый</label>
+              </li>
+              <li class="order-data__option">
+                <input class="order-data__checkbox" id="color-orange" type="checkbox" name="color-orange">
+                <label for="color-orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="order-data__options">
+            <legend class="order-data__title">ФИО</legend>
+            <ul>
+              <li class="order-data__option">
+                <label for="order-data-name">Имя:</label>
+                <input class="order-data__input" id="order-data-name" type="text" name="name" placeholder="Введите ваше имя*" required>
+              </li>
+              <li class="order-data__option">
+                <label for="order-data-surname">Фамилия:</label>
+                <input class="order-data__input" id="order-data-surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+              </li>
+              <li class="order-data__option">
+                <label for="order-data-patronymic">Отчество:</label>
+                <input class="order-data__input" id="order-data-patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
+              </li>
+            </ul>
+          </fieldset>
+          <p class="order-data__option">
+            <label class="order-data__title" for="order-data-tel">Тел</label>
+            <input class="order-data__input" id="order-data-tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </p>
+          <p class="order-data__option">
+            <label class="order-data__title" for="order-data-email">E-mail</label>
+            <input class="order-data__input" id="order-data-email" type="email" name="email" placeholder="Ваш Email*" required>
+          </p>
+          <p class="order-data__option">
+            <label class="order-data__title" for="order-data-wish">Доп</label>
+            <textarea class="order-data__input" id="order-data-wish" name="wish" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </p>
+          <small class="order-data__legend">*Поля обязательны для заполнения</small>
+          <button class="order-data__button button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">

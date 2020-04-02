@@ -89,6 +89,53 @@
           <li class="advantages__item advantages__item--supplied">Поставляется в подарочной упаковке</li>
         </ul>
       </section>
+
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+              <cite class="reviews__author-name">Анастасия Красильникова</cite><br>
+              <cite class="reviews__author__nickname">@misssssiskras</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Читала очень много отзывов мастериц-рукодельниц об этом искусстве (а я считаю это искусством), так вот все мастерицы в один голос заявляют, что это увлечение затягивает и бросать они его не собираются, и будут совершенствовать свою...</p>
+              <cite class="reviews__author-name">Светлана Хиценко</cite><br>
+              <cite class="reviews__author__nickname">@hicenko1981</cite>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <p class="reviews__text">Нам подарили собачку фирмы Фрея. Честно говоря раньше таких не встречала. Эта игрушка сразу понравилась дочке, но ее катает, укладывает спать, постоянно играет с ней. Она вязаная, материал лично мне напоминает колготы из детства)). Собачка...</p>
+              <cite class="reviews__author-name">Мария Резник</cite><br>
+              <cite class="reviews__author__nickname">@aco2012</cite>
+            </blockquote>
+            <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+            <button class="reviews__next" type="button">Следующий отзыв</button>
+          </div>
+          <a class="reviews__write button" href="#">Написать</a>
+        </div>
+      </section>
+
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <b class="feedback__title">Контакты</b>
+        <address class="feedback__address">
+          <table>
+            <tr>
+              <td>e-mail:</td>
+              <td><a href="email:info@mimimishkashop.ru">info@mimimishkashop.ru</a></td>
+            </tr>
+            <tr>
+              <td>адрес:</td>
+              <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+            </tr>
+          </table>
+        </address>
+        <div class="feedback__map">
+          <img src="https://via.placeholder.com/322x457" width="322" height="457" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+        </div>
+        <a class="feedback__button button" href="#">Напишите нам</a>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -110,5 +157,22 @@
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
+
+    <div class="modal-overlay"></div>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru">
+        <label class="form__item">
+          <input type="radio" name="size" value="s" checked> S
+        </label>
+        <label class="form__item">
+          <input type="radio" name="size" value="m"> M
+        </label>
+        <label class="form__item">
+          <input type="radio" name="size" value="l"> L
+        </label>
+        <button class="modal__button form__button" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
