@@ -1,0 +1,16 @@
+.advantages {
+  &__list {
+    @include reset-list-style;
+  }
+
+  &__item {
+    font-family: "OpenSans Bold";
+    font-size: 17px;
+    line-height: 20px;
+    color: $black-color;
+
+    path {
+      fill: $mint-color;
+    }
+  }
+}

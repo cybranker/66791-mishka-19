@@ -1,0 +1,29 @@
+.bestseller {
+  &__title {
+    margin: 0;
+  }
+
+  &__flag {
+    font-family: "OpenSans Bold";
+    font-size: 17px;
+    line-height: 20px;
+    color: $mint-color;
+    text-transform: uppercase;
+  }
+
+  &__characteristics {
+    border-collapse: collapse;
+
+    td {
+      border-bottom: 1px solid $light-gray-color;
+    }
+  }
+
+  &__price {
+    font-family: "OpenSans Bold";
+    font-size: 17px;
+    line-height: 24px;
+    color: $gray-color;
+    text-align: center;
+  }
+}
