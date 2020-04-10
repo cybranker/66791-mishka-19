@@ -1,0 +1,38 @@
+.catalog {
+  &__list {
+    @include reset-list-style;
+  }
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__wrapper {
+    border: 1px solid $light-gray-color;
+  }
+
+  &__title {
+    a {
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 24px;
+      color: $black-color;
+      text-decoration: none;
+    }
+  }
+
+  &__price {
+    b {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+      color: $black-color;
+    }
+  }
+
+  &__button {
+    path {
+      fill: #cccccc;
+    }
+  }
+}

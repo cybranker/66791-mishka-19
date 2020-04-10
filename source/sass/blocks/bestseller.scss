@@ -4,9 +4,9 @@
   }
 
   &__flag {
-    font-family: "OpenSans Bold";
     font-size: 17px;
     line-height: 20px;
+    font-weight: 700;
     color: $mint-color;
     text-transform: uppercase;
   }
@@ -20,9 +20,9 @@
   }
 
   &__price {
-    font-family: "OpenSans Bold";
     font-size: 17px;
     line-height: 24px;
+    font-weight: 700;
     color: $gray-color;
     text-align: center;
   }

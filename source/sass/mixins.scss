@@ -7,11 +7,11 @@
 @mixin menu-link() {
   display: block;
   padding: 27px 0;
-  font-family: "OpenSans Bold";
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
   color: $black-color;
   text-decoration: none;
   border: none;
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid $light-gray-color;
 }
