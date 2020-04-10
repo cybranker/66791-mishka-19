@@ -1,13 +1,13 @@
 .site-list {
   @include reset-list-style;
+}
 
-  &__item {
-    &:first-child {
-      border-top: 1px solid $light-gray-color;
-    }
+.site-list__item {
+  &:first-child {
+    border-top: 1px solid $light-gray-color;
+  }
 
-    a {
-      @include menu-link;
-    }
+  a {
+    @include menu-link;
   }
 }

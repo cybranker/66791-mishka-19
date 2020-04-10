@@ -1,5 +1,3 @@
-.social {
-  &__list {
-    @include reset-list-style;
-  }
+.social__list {
+  @include reset-list-style;
 }

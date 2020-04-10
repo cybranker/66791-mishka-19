@@ -1,29 +1,27 @@
-.bestseller {
-  &__title {
-    margin: 0;
-  }
+.bestseller__title {
+  margin: 0;
+}
 
-  &__flag {
-    font-size: 17px;
-    line-height: 20px;
-    font-weight: 700;
-    color: $mint-color;
-    text-transform: uppercase;
-  }
+.bestseller__flag {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $mint-color;
+  text-transform: uppercase;
+}
 
-  &__characteristics {
-    border-collapse: collapse;
+.bestseller__characteristics {
+  border-collapse: collapse;
 
-    td {
-      border-bottom: 1px solid $light-gray-color;
-    }
+  td {
+    border-bottom: 1px solid $light-gray-color;
   }
+}
 
-  &__price {
-    font-size: 17px;
-    line-height: 24px;
-    font-weight: 700;
-    color: $gray-color;
-    text-align: center;
-  }
+.bestseller__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $gray-color;
+  text-align: center;
 }
