@@ -1,0 +1,14 @@
+.advantages__list {
+  @include reset-list-style;
+}
+
+.advantages__item {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black-color;
+
+  path {
+    fill: $mint-color;
+  }
+}
