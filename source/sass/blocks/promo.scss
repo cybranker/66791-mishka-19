@@ -24,16 +24,16 @@
   path {
     fill: $dark-mint-color;
   }
-}
 
-.promo__item--interior {
-  a {
-    background-color: $mint-color;
+  &--interior {
+    a {
+      background-color: $mint-color
+    }
   }
-}
 
-.promo__item--kids-toys {
-  a {
-    background-color: $bg-mint;
+  &--kids-toys {
+    a {
+      background-color: $bg-mint;
+    }
   }
 }
