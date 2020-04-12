@@ -1,0 +1,44 @@
+.order-data {
+  ul {
+    @include reset-list-style;
+  }
+}
+
+.order-data__text {
+  font-size: 13px;
+}
+
+.order-data__options {
+  border: none;
+  padding: 0;
+}
+
+.order-data__title {
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $mint-color;
+  text-transform: uppercase;
+}
+
+.order-data__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black-color;
+}
+
+.order-data__legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.order-data__textarea {
+  border: 2px solid $gray-color;
+  resize: none;
+}
+
+.order-data__button {
+  width: 100%;
+}
