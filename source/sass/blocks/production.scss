@@ -1,0 +1,12 @@
+.production {
+  border: 1px solid $light-gray-color;
+}
+
+.production__title {
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 35px 50%;
+}
