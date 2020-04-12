@@ -1,0 +1,23 @@
+.feedback__title {
+  font-size: 18px;
+}
+
+.feedback__address {
+  font-style: normal;
+
+  table {
+    line-height: 30px;
+  }
+
+  td {
+    vertical-align: top;
+  }
+
+  a {
+    font-size: 15px;
+    line-height: 30px;
+    color: $gray-color;
+    text-decoration: none;
+    border-bottom: 1px solid $mint-color;
+  }
+}

@@ -1,0 +1,14 @@
+.reviews__item {
+  margin: 0;
+
+  cite {
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+  }
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  color: $black-color;
+}
