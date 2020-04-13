@@ -6,6 +6,7 @@
 
 .order-data__text {
   font-size: 13px;
+  line-height: 1.85;
 }
 
 .order-data__options {
@@ -16,7 +17,7 @@
 .order-data__title {
   display: block;
   font-size: 17px;
-  line-height: 16px;
+  line-height: 0.94;
   font-weight: 700;
   color: $mint-color;
   text-transform: uppercase;
@@ -24,14 +25,14 @@
 
 .order-data__label {
   font-size: 17px;
-  line-height: 18px;
+  line-height: 1.06;
   font-weight: 700;
   color: $black-color;
 }
 
 .order-data__legend {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
 }
 
 .order-data__textarea {
@@ -41,4 +42,5 @@
 
 .order-data__button {
   width: 100%;
+  line-height: 0.94;
 }

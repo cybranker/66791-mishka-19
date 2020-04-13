@@ -5,8 +5,17 @@
 .production__title {
   padding-left: 90px;
   font-size: 17px;
-  line-height: 24px;
+  line-height: 1.41;
   background-image: url("../img/icon-video.svg");
   background-repeat: no-repeat;
   background-position: 35px 50%;
+}
+
+.production__text {
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.production__button {
+  line-height: 0.94;
 }

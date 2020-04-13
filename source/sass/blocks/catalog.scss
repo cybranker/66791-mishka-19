@@ -14,17 +14,22 @@
   a {
     font-weight: 700;
     font-size: 17px;
-    line-height: 24px;
+    line-height: 1.41;
     color: $black-color;
     text-decoration: none;
   }
+}
+
+.catalog__characteristics {
+  font-size: 13px;
+  line-height: 2.31;
 }
 
 .catalog__price {
   b {
     font-weight: 700;
     font-size: 15px;
-    line-height: 24px;
+    line-height: 1.6;
     color: $black-color;
   }
 }
