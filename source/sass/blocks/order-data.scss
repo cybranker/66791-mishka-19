@@ -1,15 +1,20 @@
 .order-data {
+  padding-bottom: 55px;
+
   ul {
     @include reset-list-style;
   }
 }
 
 .order-data__text {
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 13px;
   line-height: 1.85;
 }
 
 .order-data__options {
+  margin-bottom: 30px;
   border: none;
   padding: 0;
 }
