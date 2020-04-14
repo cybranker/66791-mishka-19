@@ -3,45 +3,61 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка - Каталог</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
         </a>
 
         <button class="main-header__toggle" type="button">Открыть меню</button>
+      </div>
 
-        <div class="main-header__wrapper">
-          <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--active">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="main-header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="catalog.html">
+                <div class="container">
+                  Каталог товаров
+                </div>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                <div class="container">
+                  Вязание на заказ
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-          <div class="main-search">
-            <button class="main-search__button" type="button">Поиск по сайту</button>
-          </div>
+        <div class="main-search">
+          <a class="main-search__button" href="search.html">
+            <div class="container">
+              Поиск по сайту
+            </div>
+          </a>
+        </div>
 
-          <div class="main-basket">
-            <a class="main-basket__button" href="basket.html">Корзина: пока пуста</a>
-          </div>
+        <div class="main-basket">
+          <a class="main-basket__button" href="basket.html">
+            <div class="container">
+              Корзина: пока пуста
+            </div>
+          </a>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="page-title">Каталог товаров</h1>
+      <h1 class="page-title">Каталог товаров</h1>
 
+      <div class="container">
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
           <ul class="catalog__list">
@@ -109,12 +125,14 @@
         </section>
 
         <article class="production">
-          <h2 class="production__title">Процесс производства</h2>
+          <h2 class="production__title title">Процесс производства</h2>
           <div class="production__video">
             <img src="img/video-mobile%401x.jpg" width="260" height="150" alt="Видео о производсве вязаных товаров">
           </div>
-          <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <a class="production__button button" href="#">Сделать заказ</a>
+          <div class="production__wrapper">
+            <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+            <a class="production__button button" href="#">Сделать заказ</a>
+          </div>
         </article>
       </div>
     </main>
@@ -162,7 +180,7 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="img/htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy">
           </a>

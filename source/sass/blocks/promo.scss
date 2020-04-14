@@ -3,10 +3,13 @@
   padding-top: 300px;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 0%;
 }
 
 .promo__title {
   font-size: 27px;
+  line-height: 1.11;
+  text-align: center;
 }
 
 .promo__list {
@@ -17,6 +20,9 @@
   a {
     display: block;
     padding: 30px 0;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1.26;
     color: $white-color;
     text-decoration: none;
   }
@@ -27,7 +33,7 @@
 
   &--interior {
     a {
-      background-color: $mint-color
+      background-color: $mint-color;
     }
   }
 

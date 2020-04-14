@@ -1,3 +1,7 @@
+.main-basket {
+  border-bottom: 1px solid $light-gray-color;
+}
+
 .main-search__button {
   @include menu-link;
 }

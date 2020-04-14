@@ -1,0 +1,28 @@
+.production {
+  margin-bottom: 60px;
+  border: 1px solid $light-gray-color;
+}
+
+.production__title {
+  margin: 22px 0;
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 1.41;
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 35px 50%;
+}
+
+.production__wrapper {
+  padding: 30px;
+}
+
+.production__text {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.85;
+}
+
+.production__button {
+  line-height: 0.94;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/normalize.css">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -14,39 +14,57 @@
         </a>
 
         <button class="main-header__toggle" type="button">Открыть меню</button>
+      </div>
 
-        <div class="main-header__wrapper">
-          <nav class="main-nav">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item">
-                <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="site-list__item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-            </ul>
-          </nav>
+      <div class="main-header__wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="catalog.html">
+                <div class="container">
+                  Каталог товаров
+                </div>
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                <div class="container">
+                  Вязание на заказ
+                </div>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-          <div class="main-search">
-            <button class="main-search__button" type="button">Поиск по сайту</button>
-          </div>
+        <div class="main-search">
+          <a class="main-search__button" href="search.html">
+            <div class="container">
+              Поиск по сайту
+            </div>
+          </a>
+        </div>
 
-          <div class="main-basket">
-            <a class="main-basket__button" href="basket.html">Корзина: пока пуста</a>
-          </div>
+        <div class="main-basket">
+          <a class="main-basket__button" href="basket.html">
+            <div class="container">
+              Корзина: пока пуста
+            </div>
+          </a>
         </div>
       </div>
     </header>
 
     <main>
-      <div class="container">
-        <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы «Мишка»</h1>
+      <h1 class="visually-hidden">Интернет-магазин игрушек ручной работы «Мишка»</h1>
 
-        <section class="promo">
+      <section class="promo">
+        <div class="container">
           <h2 class="promo__title title">Милые штуки ручной работы для дома</h2>
-          <ul class="promo__list">
-            <li class="promo__item promo__item--interior">
-              <a href="#">
+        </div>
+        <ul class="promo__list">
+          <li class="promo__item promo__item--interior">
+            <a href="#">
+              <div class="container">
                 Предметы интерьера
                 <svg version="1.1" id="svg4488" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40.219px" height="62.411px" viewBox="-259.404 -19.675 40.219 62.411" enable-background="new -259.404 -19.675 40.219 62.411" xml:space="preserve">
                   <g>
@@ -57,20 +75,24 @@
                     <path d="M-239.295,9.336c-0.146,0-0.338,0.074-0.58,0.213c-0.157,0.094-0.37,0.261-0.57,0.41v3.731h2.299V9.959 C-238.651,9.581-239.054,9.336-239.295,9.336z"/>
                   </g>
                 </svg>
-              </a>
-            </li>
-            <li class="promo__item promo__item--kids-toys">
-              <a href="#">
+              </div>
+            </a>
+          </li>
+          <li class="promo__item promo__item--kids-toys">
+            <a href="#">
+              <div class="container">
                 Детские игрушки
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="60px" height="59.62px" viewBox="226.001 226.19 60 59.62" enable-background="new 226.001 226.19 60 59.62" xml:space="preserve">
                   <path fill="#231F20" d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"/>
                 </svg>
-              </a>
-            </li>
-          </ul>
-        </section>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
 
-        <section class="bestseller">
+      <section class="bestseller">
+        <div class="container">
           <h2 class="visually-hidden">Хит недели</h2>
           <article class="bestseller__item">
             <h3 class="bestseller__title title">Вязаные корзинки</h3>
@@ -96,9 +118,11 @@
             <div class="bestseller__price">Цена: 990 руб.</div>
             <a class="bestseller__button button" href="#">Заказать</a>
           </article>
-        </section>
+        </div>
+      </section>
 
-        <section class="advantages">
+      <section class="advantages">
+        <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <b class="advantages__title title">Коротко о нас:</b>
           <ul class="advantages__list">
@@ -157,11 +181,13 @@
               Поставляется в подарочной упаковке
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <section class="reviews">
+      <section class="reviews">
+        <div class="container">
           <div class="reviews__wrapper slider">
-            <h2 class="reviews__title">Отзывы</h2>
+            <h2 class="reviews__title title">Отзывы</h2>
             <div class="reviews__list slider__list">
               <blockquote class="reviews__item slider__item">
                 <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
@@ -178,16 +204,28 @@
                 <cite class="reviews__author-name">Мария Резник</cite><br>
                 <cite class="reviews__author__nickname">@aco2012</cite>
               </blockquote>
-              <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-              <button class="reviews__next" type="button">Следующий отзыв</button>
+              <button class="reviews__prev" type="button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+                </svg>
+                Предыдущий отзыв
+              </button>
+              <button class="reviews__next" type="button">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                  <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+                </svg>
+                Следующий отзыв
+              </button>
             </div>
             <a class="reviews__write button" href="#">Написать</a>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="feedback">
+      <section class="feedback">
+        <div class="container">
           <h2 class="visually-hidden">Обратная связь</h2>
-          <b class="feedback__title">Контакты</b>
+          <b class="feedback__title title">Контакты</b>
           <address class="feedback__address">
             <table>
               <tr>
@@ -200,12 +238,14 @@
               </tr>
             </table>
           </address>
-          <div class="feedback__map">
-            <img src="https://via.placeholder.com/322x457" width="322" height="457" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
-          </div>
+        </div>
+        <div class="feedback__map">
+          <img src="img/map-mobile%401x.jpg" width="322" height="457" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+        </div>
+        <div class="container">
           <a class="feedback__button button" href="#">Напишите нам</a>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
@@ -251,9 +291,9 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">Разработано:</b>
+          <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="img/htmlacademy.svg" width="27px" height="34px" alt="Логотип HTML Academy">
+            <img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>

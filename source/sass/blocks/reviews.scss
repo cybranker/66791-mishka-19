@@ -1,0 +1,18 @@
+.reviews {
+  padding: 15px 0 40px;
+}
+
+.reviews__item {
+  margin: 0;
+
+  cite {
+    font-size: 17px;
+    line-height: 1.41;
+    font-style: normal;
+  }
+}
+
+.reviews__author-name {
+  font-weight: 700;
+  color: $black-color;
+}

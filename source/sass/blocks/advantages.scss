@@ -1,10 +1,14 @@
+.advantages {
+  padding: 30px 0 40px;
+}
+
 .advantages__list {
   @include reset-list-style;
 }
 
 .advantages__item {
   font-size: 17px;
-  line-height: 20px;
+  line-height: 1.18;
   font-weight: 700;
   color: $black-color;
 
