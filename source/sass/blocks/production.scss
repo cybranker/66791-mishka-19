@@ -1,8 +1,10 @@
 .production {
+  margin-bottom: 60px;
   border: 1px solid $light-gray-color;
 }
 
 .production__title {
+  margin: 22px 0;
   padding-left: 90px;
   font-size: 17px;
   line-height: 1.41;
@@ -11,7 +13,12 @@
   background-position: 35px 50%;
 }
 
+.production__wrapper {
+  padding: 30px;
+}
+
 .production__text {
+  margin: 0;
   font-size: 13px;
   line-height: 1.85;
 }
