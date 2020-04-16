@@ -1,0 +1,27 @@
+.menu-link {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
+  padding: 27px 30px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.41;
+  color: $black-color;
+  text-decoration: none;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .menu-link {
+    font-size: 15px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .menu-link {
+    font-size: 17px;
+  }
+}

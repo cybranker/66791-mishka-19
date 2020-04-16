@@ -1,7 +1,18 @@
-.main-search {
-  border-bottom: 1px solid $light-gray-color;
+.main-basket {
+  border-top: 1px solid $border-gray;
 }
 
-.main-basket__button {
-  @include menu-link;
+@media (min-width: $tablet-width) {
+  .main-basket {
+    order: 3;
+    border-top: none;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  .main-basket__button {
+    padding: 33px 0;
+  }
 }

@@ -3,14 +3,3 @@
   margin: 0;
   list-style: none;
 }
-
-@mixin menu-link() {
-  display: block;
-  padding: 27px 0;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 1.41;
-  color: $black-color;
-  text-decoration: none;
-  border: none;
-}
