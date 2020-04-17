@@ -1,7 +1,29 @@
-.main-basket {
-  border-bottom: 1px solid $light-gray-color;
+.main-search {
+  border-top: 1px solid $border-gray;
 }
 
-.main-search__button {
-  @include menu-link;
+@media (min-width: $tablet-width) {
+  .main-search {
+    order: 2;
+    margin-left: auto;
+    border-top: none;
+
+    a {
+      font-size: 17px;
+    }
+  }
+
+  .main-search__button {
+    padding: 33px;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-search {
+    margin-left: auto;
+  }
 }

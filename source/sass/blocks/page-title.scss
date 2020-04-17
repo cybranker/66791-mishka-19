@@ -9,3 +9,20 @@
   text-align: center;
   background-color: $bg-gray;
 }
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    margin-bottom: 80px;
+    padding: 100px 0;
+    font-size: 43px;
+    line-height: 1.16;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    margin-bottom: 130px;
+    font-size: 53px;
+    line-height: 1.08;
+  }
+}

@@ -3,13 +3,16 @@
 }
 
 .site-list__item {
-  border-bottom: 1px solid $light-gray-color;
+  border-top: 1px solid $border-gray;
+}
 
-  &:first-child {
-    border-top: 1px solid $light-gray-color;
-  }
+@media (min-width: $tablet-width) {
+  .site-list__item {
+    margin-right: 35px;
+    border-top: none;
 
-  a {
-    @include menu-link;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

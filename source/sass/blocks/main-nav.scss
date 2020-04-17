@@ -1,0 +1,33 @@
+.main-nav {
+  &--extra {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    order: 4;
+    margin-top: 14px;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    order: 1;
+
+    &--extra {
+      display: block;
+      order: 5;
+
+      a {
+        font-size: 15px;
+        line-height: 1.6;
+      }
+    }
+  }
+}

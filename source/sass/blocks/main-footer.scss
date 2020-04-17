@@ -2,3 +2,19 @@
   padding: 25px 0;
   background-color: $bg-gray;
 }
+
+.main-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__logo {
+    display: block;
+  }
+}
