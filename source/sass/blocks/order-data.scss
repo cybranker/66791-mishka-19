@@ -128,17 +128,14 @@
 @media (min-width: $desktop-width) {
   .order-data__title {
     text-align: center;
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .order-data__text {
     width: 60%;
     margin-left: 20%;
-  }
-
-  .order-data__title {
-    width: 20%;
-    margin-left: 0;
-    margin-right: 0;
   }
 
   .order-data__options {
