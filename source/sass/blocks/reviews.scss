@@ -1,5 +1,6 @@
-.reviews {
-  padding: 15px 0 40px;
+.reviews__container {
+  padding-top: 15px;
+  padding-bottom: 40px;
 }
 
 .reviews__item {
@@ -15,4 +16,52 @@
 .reviews__author-name {
   font-weight: 700;
   color: $black-color;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    background-image: url("../img/review%401x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reviews__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .reviews__title {
+    order: 1;
+  }
+
+  .reviews__write {
+    order: 2;
+  }
+
+  .reviews__list {
+    width: 100%;
+    order: 3;
+  }
+
+  .reviews__buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__container {
+    min-height: 325px;
+  }
+
+  .reviews__list {
+    margin-left: 175px;
+  }
 }
