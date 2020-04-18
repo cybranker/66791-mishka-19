@@ -55,14 +55,15 @@
 
     <main class="main-content">
       <h1 class="page-title">Вязание на заказ</h1>
-
-      <div class="container">
-        <section class="order-data">
+      <section class="order-data">
+        <div class="container">
           <h2 class="visually-hidden">Данные заказа</h2>
           <p class="order-data__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <form class="order-data__form" action="https://echo.htmlacademy.ru">
-            <fieldset class="order-data__options">
-              <legend class="order-data__title">Тип</legend>
+        </div>
+        <form class="order-data__form" action="https://echo.htmlacademy.ru">
+          <div class="order-data__options">
+            <div class="order-data__container container">
+              <h3 class="order-data__title">Тип</h3>
               <ul>
                 <li class="order-data__option">
                   <input class="order-data__radio" id="type-accessory" type="radio" name="type-group" value="accessory" checked>
@@ -73,9 +74,11 @@
                   <label class="order-data__label" for="type-kids-toy">Детская игрушка</label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="order-data__options">
-              <legend class="order-data__title">Цвет</legend>
+            </div>
+          </div>
+          <div class="order-data__options order-data__options--color">
+            <div class="order-data__container container">
+              <h3 class="order-data__title">Цвет</h3>
               <ul>
                 <li class="order-data__option">
                   <input class="order-data__checkbox" id="color-white" type="checkbox" name="color-white" checked>
@@ -102,9 +105,11 @@
                   <label class="order-data__label" for="color-orange">Оранжевый</label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="order-data__options">
-              <legend class="order-data__title">ФИО</legend>
+            </div>
+          </div>
+          <div class="order-data__options order-data__options--full-name">
+            <div class="order-data__container container">
+              <h3 class="order-data__title">ФИО</h3>
               <ul>
                 <li class="order-data__option">
                   <label class="order-data__label" for="order-data-name">Имя:</label>
@@ -119,24 +124,34 @@
                   <input class="form-control" id="order-data-patronymic" type="text" name="patronymic" placeholder="Отчество, если желаете">
                 </li>
               </ul>
-            </fieldset>
-            <p class="order-data__option">
+            </div>
+          </div>
+          <div class="order-data__option order-data__option--phone">
+            <div class="order-data__container container">
               <label class="order-data__title" for="order-data-tel">Тел</label>
               <input class="form-control" id="order-data-tel" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </p>
-            <p class="order-data__option">
+            </div>
+          </div>
+          <div class="order-data__option order-data__option--email">
+            <div class="order-data__container container">
               <label class="order-data__title" for="order-data-email">E-mail</label>
               <input class="form-control" id="order-data-email" type="email" name="email" placeholder="Ваш Email*" required>
-            </p>
-            <p class="order-data__option">
+            </div>
+          </div>
+          <div class="order-data__option">
+            <div class="order-data__container container">
               <label class="order-data__title" for="order-data-wish">Доп</label>
               <textarea class="order-data__textarea form-control" id="order-data-wish" name="wish" rows="5" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-            </p>
-            <small class="order-data__legend">*Поля обязательны для заполнения</small>
-            <button class="order-data__button button" type="submit">Отправить заказ</button>
-          </form>
-        </section>
-      </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="order-data__wrapper">
+              <small class="order-data__legend">*Поля обязательны для заполнения</small>
+              <button class="order-data__button button" type="submit">Отправить заказ</button>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="main-footer">
