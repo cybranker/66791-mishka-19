@@ -15,12 +15,10 @@
 
 .order-data__options {
   margin-bottom: 30px;
-  border: none;
-  padding: 0;
 }
 
 .order-data__title {
-  display: block;
+  margin: 10px;
   font-size: 17px;
   line-height: 0.94;
   font-weight: 700;
@@ -48,4 +46,117 @@
 .order-data__button {
   width: 100%;
   line-height: 0.94;
+}
+
+@media (min-width: $tablet-width) {
+  .order-data__text {
+    font-size: 17px;
+    line-height: 1.76;
+  }
+
+  .order-data__options {
+    ul {
+      width: 75%;
+    }
+
+    &--color {
+      background-color: $bg-gray;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .order-data__option {
+        width: 50%;
+      }
+    }
+
+    &--full-name {
+      .order-data__option {
+        align-items: center;
+      }
+
+      .form-control {
+        width: 100%;
+      }
+    }
+  }
+
+  .order-data__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .order-data__title {
+    width: 25%;
+  }
+
+  .order-data__option {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    &--phone,
+    &--email {
+      background-color: $bg-gray;
+
+      .form-control {
+        background-color: transparent;
+      }
+    }
+
+    &--email {
+      margin-bottom: 50px;
+    }
+  }
+
+  .order-data__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .order-data__button {
+    width: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-data__title {
+    text-align: center;
+    width: 20%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .order-data__text {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .order-data__options {
+    ul {
+      width: 60%;
+    }
+
+    &--color {
+      .order-data__option {
+        width: 33%;
+      }
+    }
+  }
+
+  .order-data__container {
+    justify-content: flex-start;
+  }
+
+  .order-data__wrapper {
+    margin-top: 50px;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
 }

@@ -11,3 +11,15 @@
   border: none;
   border-bottom: 2px solid $black-color;
 }
+
+@media (min-width: $tablet-width) {
+  .form-control {
+    width: 75%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-control {
+    width: 60%;
+  }
+}
