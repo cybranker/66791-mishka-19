@@ -1,14 +1,16 @@
 .menu-link {
   display: block;
-  width: 260px;
+  width: 320px;
   margin: 0 auto;
   padding: 27px 30px;
+  padding-left: 75px;
   font-weight: 700;
   font-size: 17px;
   line-height: 1.41;
   color: $black-color;
   text-decoration: none;
   border: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
