@@ -120,6 +120,8 @@
 @media (min-width: $tablet-width) {
   .promo {
     padding-top: 160px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
   }
 
   .promo__title {
@@ -149,6 +151,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding-top: 170px;
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .promo__title {
@@ -159,5 +162,9 @@
 
   .promo__list {
     width: 1050px;
+  }
+
+  .promo__item a {
+    padding: 30px 35px 35px;
   }
 }
