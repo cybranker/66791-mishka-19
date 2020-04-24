@@ -2,8 +2,13 @@
   padding: 30px 0 40px;
 }
 
+.bestseller__header {
+  margin-bottom: 24px;
+}
+
 .bestseller__title {
   margin: 0;
+  margin-bottom: 6px;
 }
 
 .bestseller__flag {
@@ -15,19 +20,39 @@
 }
 
 .bestseller__description {
+  margin: 0;
+  margin-bottom: 16px;
   line-height: 1.6;
 }
 
 .bestseller__characteristics {
+  width: 100%;
   border-collapse: collapse;
+  margin-bottom: 30px;
 
   td {
+    padding: 8px 0;
     line-height: 1.33;
     border-bottom: 1px solid $light-gray-color;
+
+    &:first-child {
+      width: 40%;
+    }
+
+    &:last-child {
+      width: 60%;
+    }
   }
 }
 
+.bestseller__image {
+  line-height: 0;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
 .bestseller__price {
+  margin-bottom: 28px;
   font-size: 17px;
   line-height: 1.41;
   font-weight: 700;
@@ -36,6 +61,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .bestseller {
+    position: relative;
+    padding: 50px 0 70px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 20px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: 0 0;
+    }
+  }
+
   .bestseller__header {
     display: flex;
     flex-direction: row;
@@ -70,14 +112,27 @@
     margin-top: -240px;
   }
 
+  .bestseller__description {
+    margin-bottom: 40px;
+  }
+
   .bestseller__image {
     width: 333px;
     height: 404px;
+    margin: 0;
     order: 1;
+  }
+
+  .bestseller__price {
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .bestseller {
+    padding: 0 0 100px;
+  }
+
   .bestseller__header {
     justify-content: flex-start;
     margin-bottom: 0;
@@ -86,12 +141,17 @@
   }
 
   .bestseller__title {
-    margin-left: 60px;
+    margin-left: 52px;
   }
 
   .bestseller__flag {
     order: -1;
     margin-left: 50px;
+  }
+
+  .bestseller__description {
+    font-size: 17px;
+    line-height: 1.76;
   }
 
   .bestseller__wrapper-left {
@@ -109,6 +169,6 @@
   }
 
   .bestseller__wrapper-right {
-    margin-top: -405px;
+    margin-top: -415px;
   }
 }
