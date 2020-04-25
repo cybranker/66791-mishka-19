@@ -1,17 +1,46 @@
 .copyright {
-  text-align: center;
   border-top: 1px solid #e5e5e5;
+  padding-top: 22px;
+}
+
+.copyright__link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 1;
+
+    path {
+      fill: $very-dark-mint-color;
+    }
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {
+  margin-right: 30px;
   font-size: 19px;
   line-height: 0.95;
   font-weight: 700;
   color: $black-color;
 }
 
+.copyright__htmlacademy-logo {
+  display: block;
+  width: 27px;
+  height: 34px;
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
+    padding-top: 0;
     border-top: none;
   }
 }
