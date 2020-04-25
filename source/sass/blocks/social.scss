@@ -43,6 +43,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .social {
+    margin-left: auto;
+  }
+
   .social__list {
     margin-bottom: 0;
   }

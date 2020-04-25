@@ -40,7 +40,14 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    margin-left: 85px;
     padding-top: 0;
     border-top: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    margin-left: 275px;
   }
 }
