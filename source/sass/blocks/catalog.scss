@@ -6,6 +6,29 @@
   margin-bottom: 30px;
 }
 
+.catalog__item:hover .catalog__wrapper,
+.catalog__item:focus .catalog__wrapper {
+  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.catalog__item:active .catalog__wrapper {
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+}
+
+.catalog__image {
+  a {
+    &[href]:hover,
+    &[href]:focus,
+    &[href]:active {
+      opacity: 1;
+    }
+  }
+
+  img {
+    display: block;
+  }
+}
+
 .catalog__wrapper {
   padding: 25px;
   border: 1px solid $light-gray-color;
@@ -13,6 +36,7 @@
 
 .catalog__title {
   margin: 0;
+  margin-bottom: 6px;
   line-height: 1.41;
 
   a {
@@ -26,11 +50,17 @@
 
 .catalog__characteristics {
   margin: 0;
+  margin-bottom: 20px;
   font-size: 13px;
   line-height: 2.31;
 }
 
 .catalog__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
   border-top: 1px solid $light-gray-color;
 
   b {
@@ -42,8 +72,25 @@
 }
 
 .catalog__button {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+
   path {
     fill: #cccccc;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 1;
+
+    path {
+      fill: $mint-color;
+    }
+  }
+
+  &[href]:active {
+    opacity: 0.3;
   }
 }
 
