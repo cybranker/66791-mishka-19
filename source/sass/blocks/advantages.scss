@@ -1,5 +1,9 @@
 .advantages {
-  padding: 30px 0 40px;
+  padding-bottom: 20px;
+}
+
+.advantages .container {
+  padding-top: 30px;
 }
 
 .advantages__title {
@@ -8,31 +12,83 @@
 }
 
 .advantages__item {
-  min-height: 80px;
+  min-height: 35px;
+  padding-top: 55px;
   margin-bottom: 30px;
   font-size: 17px;
   line-height: 1.18;
   font-weight: 700;
   color: $black-color;
+  background-repeat: no-repeat;
 
-  path {
-    fill: $mint-color;
+  &--ecology {
+    background-image: url("../img/icon-feature-flower.svg");
+    background-position: 8px 0;
+  }
+
+  &--style {
+    background-image: url("../img/icon-feature-money.svg");
+    background-position: 0 0;
+  }
+
+  &--likes {
+    background-image: url("../img/icon-feature-heart.svg");
+    background-position: 6px 6px;
+  }
+
+  &--love {
+    background-image: url("../img/icon-feature-ball.svg");
+    background-position: 2px 4px;
+  }
+
+  &--support {
+    background-image: url("../img/icon-feature-rocket.svg");
+    background-position: 0 3px;
+  }
+
+  &--supplied {
+    background-image: url("../img/icon-feature-gift.svg");
+    background-position: 2px 0;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .advantages .container {
+    padding-top: 55px;
+  }
+
   .advantages__list {
     display: flex;
     align-items: flex-start;
   }
+
+  .advantages__title {
+    margin-bottom: 50px;
+  }
+
+  .advantages__wrapper {
+    width: 50%;
+  }
+
+  .advantages__item {
+    margin-bottom: 60px;
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 1.1;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .advantages .container {
+    padding-top: 60px;
+  }
+
   .advantages__list {
     justify-content: center;
   }
 
-  .advantages__item {
-    width: 350px;
+  .advantages__wrapper {
+    width: 33%;
   }
 }

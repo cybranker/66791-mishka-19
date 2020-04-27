@@ -1,18 +1,84 @@
+.main-header__wrapper {
+  position: relative;
+  z-index: 10;
+}
+
 .main-header__logo {
   display: block;
   width: 260px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 22px 30px;
   text-align: center;
+  line-height: 0;
+
+  img {
+    width: 86px;
+    height: 35px;
+  }
+}
+
+.main-header__toggle {
+  position: absolute;
+  top: 25px;
+  right: 9.5%;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+.main-header--nav-closed .main-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: $black-color;
+  box-shadow: 0 6px 0 0 $black-color, 0 12px 0 0 $black-color;
+}
+
+.main-header--nav-opened .main-header__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 2px;
+    width: 26px;
+    height: 2px;
+    background-color: $black-color;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-header__legend {
   display: none;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-header--nav-closed .main-nav,
+  .main-header--nav-closed .main-search,
+  .main-header--nav-closed .main-basket,
+  .main-header--nojs .main-header__toggle {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
-    margin-bottom: -40px;
+    margin-bottom: -42px;
   }
 
   .main-header__wrapper {
@@ -32,6 +98,11 @@
     padding: 0;
     text-align: left;
     order: 1;
+
+    img {
+      width: 113px;
+      height: 46px;
+    }
   }
 
   .main-header__toggle {
@@ -43,7 +114,7 @@
     font-size: 15px;
     line-height: 1.6;
     margin: 0;
-    margin-top: 14px;
+    margin-top: 18px;
     margin-left: auto;
     order: 5;
   }
@@ -59,8 +130,13 @@
   .main-header__logo {
     width: 149px;
     height: 72px;
-    margin: 10px 0;
+    margin: 7px 0;
     margin-left: auto;
     order: 2;
+
+    img {
+      width: 149px;
+      height: 72px;
+    }
   }
 }

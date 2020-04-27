@@ -1,5 +1,5 @@
 .main-footer {
-  padding: 25px 0;
+  padding: 25px 0 22px;
   background-color: $bg-gray;
 }
 
@@ -8,13 +8,35 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .main-footer__container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
   }
 
   .main-footer__logo {
     display: block;
+
+    &[href]:hover,
+    &[href]:focus {
+      opacity: 1;
+
+      svg {
+        fill: $very-dark-mint-color;
+      }
+    }
+
+    &[href]:active {
+      opacity: 0.3;
+    }
+
+    svg {
+      width: 102px;
+      height: 34px;
+    }
   }
 }

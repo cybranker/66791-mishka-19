@@ -14,4 +14,20 @@
   border: 2px solid $gray-color;
   text-transform: uppercase;
   cursor: pointer;
+
+  &[href]:hover,
+  &[href]:focus,
+  &[href]:active {
+    opacity: 1;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    background-color: $gray-color;
+    color: $white-color;
+  }
+
+  &[href]:active {
+    color: rgba($white-color, 0.3%);
+  }
 }

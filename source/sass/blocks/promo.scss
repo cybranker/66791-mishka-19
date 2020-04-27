@@ -1,14 +1,14 @@
 .promo {
   min-height: 400px;
-  padding-top: 70px;
+  padding-top: 74px;
   background-color: $bg-promo-gray;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0%;
+  background-position: 50% -20px;
 }
 
 .promo__title {
-  margin-bottom: 130px;
+  margin-bottom: 120px;
   font-size: 27px;
   line-height: 1.11;
   text-align: center;
@@ -22,15 +22,30 @@
 
 .promo__item {
   a {
+    position: relative;
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 26px 30px 30px;
     font-weight: 700;
     font-size: 19px;
     line-height: 1.26;
     color: $white-color;
     text-decoration: none;
     box-sizing: border-box;
+
+    &[href]:hover,
+    &[href]:focus,
+    &[href]:active {
+      opacity: 1;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    opacity: 0.5;
   }
 
   path {
@@ -40,12 +55,22 @@
   &--interior {
     a {
       background-color: $mint-color;
+
+      &[href]:hover,
+      &[href]:focus {
+        box-shadow: 0 -5px 0 0 $mint-color;
+      }
     }
   }
 
   &--kids-toys {
     a {
       background-color: $bg-mint;
+
+      &[href]:hover,
+      &[href]:focus {
+        box-shadow: 0 -5px 0 0 $bg-mint;
+      }
     }
   }
 }
@@ -56,11 +81,47 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+
+  &[href]:hover,
+  &[href]:focus {
+    svg {
+      opacity: 0.7;
+      top: calc(50% - 5px);
+    }
+
+    .promo__name-link {
+      position: relative;
+      top: -5px;
+    }
+  }
+
+  &[href]:active {
+    svg {
+      opacity: 0.3;
+    }
+
+    .promo__name-link {
+      opacity: 0.3;
+    }
+  }
+}
+
+.promo__item .promo__interior-icon {
+  right: 40px;
+  width: 40px;
+  height: 62px;
+}
+
+.promo__toy-icon {
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: $tablet-width) {
   .promo {
     padding-top: 160px;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-position: 50% 0;
   }
 
   .promo__title {
@@ -90,6 +151,7 @@
 @media (min-width: $desktop-width) {
   .promo {
     padding-top: 170px;
+    background-image: url("../img/hero-desktop@1x.jpg");
   }
 
   .promo__title {
@@ -100,5 +162,9 @@
 
   .promo__list {
     width: 1050px;
+  }
+
+  .promo__item a {
+    padding: 30px 35px 35px;
   }
 }

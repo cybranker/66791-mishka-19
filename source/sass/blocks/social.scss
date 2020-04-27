@@ -1,3 +1,53 @@
 .social__list {
   @include reset-list-style;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social__item {
+  display: flex;
+  justify-content: center;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 25px;
+
+    &[href]:hover,
+    &[href]:focus,
+    &[href]:active {
+      opacity: 1;
+    }
+
+    &[href]:hover,
+    &[href]:focus {
+      path {
+        fill: $very-dark-mint-color;
+      }
+    }
+
+    &[href]:active {
+      path {
+        fill: rgba($very-dark-mint-color, 0.3%);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-left: auto;
+  }
+
+  .social__list {
+    margin-bottom: 0;
+  }
 }
