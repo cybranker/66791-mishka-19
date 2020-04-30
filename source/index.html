@@ -134,7 +134,7 @@
       </section>
 
       <section class="advantages">
-        <div class="container zigzag-line">
+        <div class="advantages__container container zigzag-line">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <b class="advantages__title title">Коротко о нас:</b>
           <div class="advantages__list">
@@ -175,7 +175,7 @@
                 </blockquote>
               </div>
               <div class="reviews__buttons slider__buttons">
-                <button class="reviews__prev js-prev" type="button">
+                <button class="reviews__prev js-prev" type="button" disabled>
                   <span class="visually-hidden">Предыдущий отзыв</span>
                 </button>
                 <button class="reviews__next js-next" type="button">
@@ -188,8 +188,8 @@
         </div>
       </section>
 
-      <section class="feedback">
-        <div class="feedback__container container">
+      <section class="feedback zigzag-line">
+        <div class="feedback__container container zigzag-line">
           <h2 class="visually-hidden">Обратная связь</h2>
           <b class="feedback__title title">Контакты</b>
           <address class="feedback__address">
@@ -200,13 +200,15 @@
               </tr>
               <tr>
                 <td>адрес:</td>
-                <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
               </tr>
             </table>
           </address>
         </div>
         <div class="feedback__map">
-          <img src="img/map-mobile%401x.jpg" width="322" height="457" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+          <img src="img/map-mobile%401x.jpg" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург"
+          srcset="img/map-desktop@1x.jpg 525w, img/map-tablet@1x.jpg 768w, img/map-mobile%401x.jpg 320w"
+          sizes="(min-width: 1150px) 525px, (min-width: 768px) 768px, (min-width: 1px) 320px">
         </div>
         <div class="feedback__container container">
           <a class="feedback__button button" href="#">Напишите нам</a>
