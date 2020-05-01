@@ -1,9 +1,5 @@
 .order-data {
   padding-bottom: 55px;
-
-  ul {
-    @include reset-list-style;
-  }
 }
 
 .order-data__text {
@@ -18,12 +14,72 @@
 }
 
 .order-data__title {
-  margin: 10px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 10px;
   font-size: 17px;
   line-height: 0.94;
   font-weight: 700;
   color: $mint-color;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-left: 30px;
+    width: 50px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+}
+
+.order-data__options .order-data__option {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.order-data__options .order-data__title {
+  margin-bottom: 20px;
+}
+
+.order-data__option--additionally .order-data__title {
+  margin-bottom: 30px;
+}
+
+.order-data__list {
+  @include reset-list-style;
+
+  &--type,
+  &--color {
+    margin-top: 26px;
+  }
+}
+
+.order-data__option {
+  margin-top: 35px;
+  margin-bottom: 10px;
+
+  &--filter {
+    padding-left: 65px;
+
+    label {
+      position: relative;
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      &::before {
+        left: -65px;
+        border: 2px solid $gray-color;
+      }
+    }
+  }
+}
+
+.order-data__list--type .order-data__option {
+  margin-bottom: 5px;
 }
 
 .order-data__label {
@@ -31,16 +87,68 @@
   line-height: 1.06;
   font-weight: 700;
   color: $black-color;
+  cursor: pointer;
+  user-select: none;
+}
+
+.order-data__radio + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
+.order-data__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -54px;
+  width: 16px;
+  height: 16px;
+  background-color: $mint-color;
+  border-radius: 50%;
+}
+
+.order-data__checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  width: 36px;
+  height: 36px;
+}
+
+.order-data__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -56px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
 }
 
 .order-data__legend {
+  display: block;
+  margin-bottom: 35px;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .order-data__textarea {
+  padding-left: 15px;
+  padding-right: 15px;
   border: 2px solid $gray-color;
   resize: none;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #62d1ba;
+  }
 }
 
 .order-data__button {

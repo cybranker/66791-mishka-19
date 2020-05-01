@@ -15,19 +15,19 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  &[href]:hover,
-  &[href]:focus,
-  &[href]:active {
+  &:hover,
+  &:focus,
+  &:active {
     opacity: 1;
   }
 
-  &[href]:hover,
-  &[href]:focus {
+  &:hover,
+  &:focus {
     background-color: $gray-color;
     color: $white-color;
   }
 
-  &[href]:active {
+  &:active {
     color: rgba($white-color, 0.3%);
   }
 }
