@@ -74,7 +74,76 @@
         left: -65px;
         border: 2px solid $gray-color;
       }
+
+      &:hover {
+        &::before {
+          border-color: #62d1ba;
+        }
+      }
+
+      &:active {
+        &::before {
+          border-color: rgba($gray-color, 0.3%);
+        }
+      }
     }
+
+    input:disabled + label {
+      cursor: no-drop;
+      opacity: 0.4;
+
+      &:hover {
+        &::before {
+          border-color: $gray-color;
+        }
+      }
+    }
+
+    input:focus + label {
+      &::before {
+        border-color: #62d1ba;
+      }
+    }
+  }
+
+  &--phone,
+  &--email {
+    .form-control {
+      padding-right: 40px;
+
+      &:hover + svg,
+      &:focus + svg {
+        path {
+          fill: #62d1ba;
+        }
+      }
+    }
+  }
+
+  &--phone {
+    svg {
+      right: 8px;
+    }
+  }
+
+  &--email  {
+    svg {
+      right: 4px;
+    }
+  }
+}
+
+.order-data__input-icon {
+  position: relative;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  path {
+    fill: rgba($black-color, 0.2%);
   }
 }
 
