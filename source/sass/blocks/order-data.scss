@@ -112,7 +112,7 @@
     }
   }
 
-  &--email  {
+  &--email {
     svg {
       right: 4px;
     }
@@ -339,10 +339,6 @@
     &--phone,
     &--email {
       background-color: $bg-gray;
-
-      .form-control {
-        background-color: transparent;
-      }
     }
 
     &--phone {
@@ -370,6 +366,7 @@
   .order-data__option--phone .form-control,
   .order-data__option--email .form-control {
     padding-right: 75px;
+    background-color: transparent;
   }
 
   .order-data__radio:checked + label::after {
@@ -443,7 +440,7 @@
       }
     }
 
-    &--email  {
+    &--email {
       svg {
         right: 4px;
       }

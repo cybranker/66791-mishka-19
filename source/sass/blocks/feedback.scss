@@ -89,7 +89,7 @@
     padding-right: 60px;
     box-sizing: border-box;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 50%;
@@ -185,7 +185,7 @@
     font-size: 53px;
     line-height: 1.08;
 
-    &:before {
+    &::before {
       left: -112px;
       right: auto;
     }
