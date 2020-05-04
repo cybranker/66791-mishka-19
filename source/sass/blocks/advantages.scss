@@ -2,7 +2,7 @@
   padding-bottom: 20px;
 }
 
-.advantages .container {
+.advantages__container {
   padding-top: 30px;
 }
 
@@ -53,7 +53,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .advantages .container {
+  .advantages__container {
     padding-top: 55px;
   }
 
@@ -80,7 +80,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .advantages .container {
+  .advantages__container {
     padding-top: 60px;
   }
 

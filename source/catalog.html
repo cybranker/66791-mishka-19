@@ -137,7 +137,12 @@
         <article class="production">
           <h2 class="production__title title">Процесс производства</h2>
           <div class="production__video">
-            <img src="img/video-mobile%401x.jpg" width="260" height="150" alt="Видео о производсве вязаных товаров">
+            <button class="production__play" type="button">
+              <span class="visually-hidden">Воспроизвести</span>
+            </button>
+            <img src="img/video-mobile%401x.jpg" alt="Видео о производсве вязаных товаров"
+            srcset="img/video-desktop@1x.jpg 682w, img/video-tablet@1x.jpg 668w, img/video-mobile@1x.jpg 260w"
+            sizes="(min-width: 1150px) 682px, (min-width: 768px) 668px, (min-width: 1px) 260px">
           </div>
           <div class="production__wrapper">
             <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

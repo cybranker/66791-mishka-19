@@ -134,7 +134,7 @@
       </section>
 
       <section class="advantages">
-        <div class="container zigzag-line">
+        <div class="advantages__container container zigzag-line">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <b class="advantages__title title">Коротко о нас:</b>
           <div class="advantages__list">
@@ -157,33 +157,29 @@
           <div class="reviews__wrapper slider">
             <h2 class="reviews__title title">Отзывы</h2>
             <div class="reviews__list slider__list">
-              <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-                <cite class="reviews__author-name">Анастасия Красильникова</cite><br>
-                <cite class="reviews__author__nickname">@misssssiskras</cite>
-              </blockquote>
-              <!-- <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Читала очень много отзывов мастериц-рукодельниц об этом искусстве (а я считаю это искусством), так вот все мастерицы в один голос заявляют, что это увлечение затягивает и бросать они его не собираются, и будут совершенствовать свою...</p>
-                <cite class="reviews__author-name">Светлана Хиценко</cite><br>
-                <cite class="reviews__author__nickname">@hicenko1981</cite>
-              </blockquote>
-              <blockquote class="reviews__item slider__item">
-                <p class="reviews__text">Нам подарили собачку фирмы Фрея. Честно говоря раньше таких не встречала. Эта игрушка сразу понравилась дочке, но ее катает, укладывает спать, постоянно играет с ней. Она вязаная, материал лично мне напоминает колготы из детства)). Собачка...</p>
-                <cite class="reviews__author-name">Мария Резник</cite><br>
-                <cite class="reviews__author__nickname">@aco2012</cite>
-              </blockquote> -->
-              <div class="reviews__buttons">
-                <button class="reviews__prev" type="button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                    <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
-                  </svg>
-                  Предыдущий отзыв
+              <div class="slider__carousel">
+                <blockquote class="reviews__item slider__item">
+                  <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                  <cite class="reviews__author-name">Анастасия Красильникова</cite><br>
+                  <cite class="reviews__author__nickname">@misssssiskras</cite>
+                </blockquote>
+                <blockquote class="reviews__item slider__item">
+                  <p class="reviews__text">Читала очень много отзывов мастериц-рукодельниц об этом искусстве (а я считаю это искусством), так вот все мастерицы в один голос заявляют, что это увлечение затягивает и бросать они его не собираются, и будут совершенствовать свою...</p>
+                  <cite class="reviews__author-name">Светлана Хиценко</cite><br>
+                  <cite class="reviews__author__nickname">@hicenko1981</cite>
+                </blockquote>
+                <blockquote class="reviews__item slider__item">
+                  <p class="reviews__text">Нам подарили собачку фирмы Фрея. Честно говоря раньше таких не встречала. Эта игрушка сразу понравилась дочке, но ее катает, укладывает спать, постоянно играет с ней. Она вязаная, материал лично мне напоминает колготы из детства)). Собачка...</p>
+                  <cite class="reviews__author-name">Мария Резник</cite><br>
+                  <cite class="reviews__author__nickname">@aco2012</cite>
+                </blockquote>
+              </div>
+              <div class="reviews__buttons slider__buttons">
+                <button class="reviews__prev js-prev" type="button" disabled>
+                  <span class="visually-hidden">Предыдущий отзыв</span>
                 </button>
-                <button class="reviews__next" type="button">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
-                    <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
-                  </svg>
-                  Следующий отзыв
+                <button class="reviews__next js-next" type="button">
+                  <span class="visually-hidden">Следующий отзыв</span>
                 </button>
               </div>
             </div>
@@ -192,8 +188,8 @@
         </div>
       </section>
 
-      <section class="feedback">
-        <div class="feedback__container container">
+      <section class="feedback zigzag-line">
+        <div class="feedback__container container zigzag-line">
           <h2 class="visually-hidden">Обратная связь</h2>
           <b class="feedback__title title">Контакты</b>
           <address class="feedback__address">
@@ -204,13 +200,15 @@
               </tr>
               <tr>
                 <td>адрес:</td>
-                <td>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+                <td>г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</td>
               </tr>
             </table>
           </address>
         </div>
         <div class="feedback__map">
-          <img src="img/map-mobile%401x.jpg" width="322" height="457" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+          <img src="img/map-mobile%401x.jpg" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург"
+          srcset="img/map-desktop@1x.jpg 525w, img/map-tablet@1x.jpg 768w, img/map-mobile%401x.jpg 320w"
+          sizes="(min-width: 1150px) 525px, (min-width: 768px) 768px, (min-width: 1px) 320px">
         </div>
         <div class="feedback__container container">
           <a class="feedback__button button" href="#">Напишите нам</a>

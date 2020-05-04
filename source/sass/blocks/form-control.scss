@@ -1,7 +1,7 @@
 .form-control {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 0;
+  padding: 16px 0;
 
   font-weight: 400;
   font-size: 17px;
@@ -9,17 +9,18 @@
   color: $gray-color;
 
   border: none;
+  outline: none;
   border-bottom: 2px solid $black-color;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $form-mint-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .form-control {
-    width: 75%;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .form-control {
-    width: 60%;
+    font-size: 19px;
+    line-height: 0.95;
   }
 }

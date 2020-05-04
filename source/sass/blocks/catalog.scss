@@ -8,11 +8,11 @@
 
 .catalog__item:hover .catalog__wrapper,
 .catalog__item:focus .catalog__wrapper {
-  box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__item:active .catalog__wrapper {
-  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .catalog__image {
@@ -163,5 +163,9 @@
   .catalog__wrapper {
     width: 100%;
     flex-grow: 1;
+  }
+
+  .catalog__characteristics {
+    margin-bottom: 15px;
   }
 }
