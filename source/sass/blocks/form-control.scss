@@ -14,13 +14,14 @@
 
   &:hover,
   &:focus {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $form-mint-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-control {
-    width: 75%;
+    font-size: 19px;
+    line-height: 0.95;
   }
 }
 
