@@ -210,9 +210,11 @@
           </address>
         </div>
         <div class="feedback__map">
-          <img src="img/map-mobile%401x.jpg" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург"
-          srcset="img/map-desktop@1x.jpg 525w, img/map-tablet@1x.jpg 768w, img/map-mobile%401x.jpg 320w"
-          sizes="(min-width: 1150px) 525px, (min-width: 768px) 768px, (min-width: 1px) 320px">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+            <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта офиса по адресу улица Большая Конюшенная, 19/8, Санкт-Петербург">
+          </picture>
         </div>
         <div class="feedback__container container">
           <a class="feedback__button button" href="#">Напишите нам</a>
