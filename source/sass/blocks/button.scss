@@ -15,6 +15,9 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  &[href]:hover,
+  &[href]:focus,
+  &[href]:active,
   &:hover,
   &:focus,
   &:active {
