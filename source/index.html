@@ -11,9 +11,11 @@
     <header class="main-header main-header--nav-closed main-header--nojs">
       <div class="main-header__wrapper">
         <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»"
-          srcset="img/logo-desktop.svg 149w, img/logo-tablet.svg 113w, img/logo-mobile.svg 86w"
-          sizes="(min-width: 1150px) 149px, (min-width: 768px) 113px, (min-width: 1px) 86px">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="main-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина игрушек ручной работы «Мишка»">
+          </picture>
         </a>
         <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
@@ -119,9 +121,11 @@
               </div>
               <div class="bestseller__wrapper-right">
                 <div class="bestseller__image">
-                  <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные двух цветов корзинки"
-                  srcset="img/triple-set-desktop@1x.jpg 525w, img/triple-set-tablet@1x.jpg 333w, img/triple-set-mobile@1x.jpg 260w"
-                  sizes="(min-width: 1150px) 525px, (min-width: 768px) 333px, (min-width: 1px) 260px">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                    <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные двух цветов корзинки">
+                  </picture>
                 </div>
                 <div class="bestseller__wrapper-left">
                   <div class="bestseller__price">Цена: 990 руб.</div>
@@ -300,5 +304,6 @@
     </section>
 
     <script src="js/scripts.js"></script>
+    <script src="js/picturefill.min.js" async></script>
   </body>
 </html>
