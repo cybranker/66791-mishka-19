@@ -67,9 +67,13 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <div class="catalog__image">
-                <a href="#"><img src="img/photo-hare-mobile%401x.jpg" alt="Вязаный заец"
-                srcset="img/photo-hare-desktop@1x.jpg 316w, img/photo-hare-tablet@1x.jpg 334w, img/photo-hare-mobile@1x.jpg 260w"
-                sizes="(min-width: 1150px) 316px, (min-width: 768px) 334px, (min-width: 1px) 260px"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                    <img src="img/photo-hare-mobile@1x.jpg" srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Вязаный заец">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__wrapper">
                 <h3 class="catalog__title">
@@ -89,9 +93,13 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <a href="#"><img src="img/photo-bowl-mobile%401x.jpg" alt="Вязаная корзина"
-                srcset="img/photo-bowl-desktop@1x.jpg 316w, img/photo-bowl-tablet@1x.jpg 334w, img/photo-bowl-mobile@1x.jpg 260w"
-                sizes="(min-width: 1150px) 316px, (min-width: 768px) 334px, (min-width: 1px) 260px"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                    <img src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Вязаная корзина">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__wrapper">
                 <h3 class="catalog__title">
@@ -111,9 +119,13 @@
             </li>
             <li class="catalog__item">
               <div class="catalog__image">
-                <a href="#"><img src="img/photo-toys-mobile%401x.jpg" alt="Большая вязаная корзина"
-                srcset="img/photo-toys-desktop@1x.jpg 316w, img/photo-toys-tablet@1x.jpg 334w, img/photo-toys-mobile@1x.jpg 260w"
-                sizes="(min-width: 1150px) 316px, (min-width: 768px) 334px, (min-width: 1px) 260px"></a>
+                <a href="#">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                    <img src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая вязаная корзина">
+                  </picture>
+                </a>
               </div>
               <div class="catalog__wrapper">
                 <h3 class="catalog__title">
@@ -236,5 +248,6 @@
     </section>
 
     <script src="js/scripts.js"></script>
+    <script src="js/picturefill.min.js" async></script>
   </body>
 </html>

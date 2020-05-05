@@ -1,3 +1,7 @@
+// Picture element HTML5 shiv
+document.createElement( "picture" );
+
+
 var headerMain = document.querySelector('.main-header');
 var headerToggle = document.querySelector('.main-header__toggle');
 
