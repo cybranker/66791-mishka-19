@@ -21,6 +21,10 @@
   .main-footer__logo {
     display: block;
 
+    svg {
+      fill: #231f20;
+    }
+
     &[href]:hover,
     &[href]:focus {
       opacity: 1;

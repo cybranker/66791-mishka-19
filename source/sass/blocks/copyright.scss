@@ -10,11 +10,15 @@
   justify-content: center;
   text-decoration: none;
 
+  svg {
+    fill: #63d1bb;
+  }
+
   &[href]:hover,
   &[href]:focus {
     opacity: 1;
 
-    path {
+    svg {
       fill: $very-dark-mint-color;
     }
   }

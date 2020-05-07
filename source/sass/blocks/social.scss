@@ -21,6 +21,8 @@
     justify-content: center;
     width: 25px;
 
+    fill: #231F20;
+
     &[href]:hover,
     &[href]:focus,
     &[href]:active {
@@ -29,13 +31,13 @@
 
     &[href]:hover,
     &[href]:focus {
-      path {
+      svg {
         fill: $very-dark-mint-color;
       }
     }
 
     &[href]:active {
-      path {
+      svg {
         fill: rgba($very-dark-mint-color, 0.3%);
       }
     }
