@@ -30,10 +30,6 @@ var slidePrev = slider.querySelector('.js-prev');
 var slideNext = slider.querySelector('.js-next');
 var position = 0;
 
-/*for (var sliderItem of sliderItems) {
-  sliderItem.style.width = sliderListWidth + 'px';
-}*/
-
 for(var i = 0; i < sliderItems.length; i++) {
   sliderItems[i].style.width = sliderListWidth + 'px';
 }
