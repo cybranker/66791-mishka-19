@@ -34,18 +34,14 @@
   transform: translateY(-50%);
   opacity: 0.2;
 
-  path {
-    fill: #221f1f;
-  }
+  fill: #221f1f;
 }
 
 .main-search__button[href]:hover .main-search__search-icon,
 .main-search__button[href]:focus .main-search__search-icon {
   opacity: 1;
 
-  path {
-    fill: $mint-color;
-  }
+  fill: $mint-color;
 }
 
 .main-search__button[href]:active .main-search__search-icon {

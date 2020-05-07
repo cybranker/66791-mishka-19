@@ -125,9 +125,7 @@
 
   &:hover + svg,
   &:focus + svg {
-    path {
-      fill: $form-mint-color;
-    }
+    fill: $form-mint-color;
   }
 }
 
@@ -138,9 +136,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-
-  path {
     fill: rgba($black-color, 0.2%);
   }
 }

@@ -76,7 +76,7 @@
   align-self: stretch;
   align-items: center;
 
-  path {
+  svg {
     fill: #cccccc;
   }
 
@@ -84,7 +84,7 @@
   &[href]:focus {
     opacity: 1;
 
-    path {
+    svg {
       fill: $mint-color;
     }
   }

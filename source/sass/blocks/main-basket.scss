@@ -34,18 +34,14 @@
   transform: translateY(-50%);
   opacity: 0.2;
 
-  path {
-    fill: #221f1f;
-  }
+  fill: #221f1f;
 }
 
 .main-basket__button[href]:hover .main-basket__cart-icon,
 .main-basket__button[href]:focus .main-basket__cart-icon {
   opacity: 1;
 
-  path {
-    fill: $mint-color;
-  }
+  fill: $mint-color;
 }
 
 .main-basket__button[href]:active .main-basket__cart-icon {

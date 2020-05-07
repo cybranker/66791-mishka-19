@@ -21,6 +21,12 @@
   .main-footer__logo {
     display: block;
 
+    svg {
+      width: 102px;
+      height: 34px;
+      fill: #231f20;
+    }
+
     &[href]:hover,
     &[href]:focus {
       opacity: 1;
@@ -32,11 +38,6 @@
 
     &[href]:active {
       opacity: 0.3;
-    }
-
-    svg {
-      width: 102px;
-      height: 34px;
     }
   }
 }

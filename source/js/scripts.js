@@ -1,6 +1,7 @@
+svg4everybody();
+
 // Picture element HTML5 shiv
 document.createElement( "picture" );
-
 
 var headerMain = document.querySelector('.main-header');
 var headerToggle = document.querySelector('.main-header__toggle');
@@ -29,8 +30,9 @@ var slidePrev = slider.querySelector('.js-prev');
 var slideNext = slider.querySelector('.js-next');
 var position = 0;
 
-for(var sliderItem of sliderItems)
-  sliderItem.style.width = sliderListWidth + 'px';
+for(var i = 0; i < sliderItems.length; i++) {
+  sliderItems[i].style.width = sliderListWidth + 'px';
+}
 
 slidePrev.addEventListener('click', function() {
   if (position < 0) {
