@@ -22,6 +22,8 @@
     display: block;
 
     svg {
+      width: 102px;
+      height: 34px;
       fill: #231f20;
     }
 
@@ -36,11 +38,6 @@
 
     &[href]:active {
       opacity: 0.3;
-    }
-
-    svg {
-      width: 102px;
-      height: 34px;
     }
   }
 }

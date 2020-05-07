@@ -21,7 +21,9 @@
     justify-content: center;
     width: 25px;
 
-    fill: #231F20;
+    svg {
+      fill: #231f20;
+    }
 
     &[href]:hover,
     &[href]:focus,
