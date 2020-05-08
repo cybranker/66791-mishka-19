@@ -102,6 +102,12 @@
     align-items: flex-start;
   }
 
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .production {
+      align-items: flex-end;
+    }
+  }
+
   .production__title {
     order: 2;
     width: 365px;
