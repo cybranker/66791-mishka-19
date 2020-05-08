@@ -273,18 +273,26 @@
 
     <div class="modal-overlay"></div>
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form form" action="https://echo.htmlacademy.ru">
-        <label class="form__item">
-          <input type="radio" name="size" value="s" checked> S
-        </label>
-        <label class="form__item">
-          <input type="radio" name="size" value="m"> M
-        </label>
-        <label class="form__item">
-          <input type="radio" name="size" value="l"> L
-        </label>
-        <button class="modal__button form__button" type="submit">Добавить</button>
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-s" type="radio" name="size" value="s" checked>
+            <label for="filter-size-s">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-m" type="radio" name="size" value="m">
+            <label for="filter-size-m">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-l" type="radio" name="size" value="l">
+            <label for="filter-size-l">L</label>
+          </li>
+        </ul>
+        <div class="modal__buttons">
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
       </form>
     </section>
 
