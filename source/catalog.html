@@ -89,7 +89,7 @@
                 <p class="catalog__characteristics">Рост 30 см, вес 200 г</p>
                 <div class="catalog__price">
                   <b>1 200 руб.</b>
-                  <a class="catalog__button" href="#">
+                  <a class="catalog__button js-add-cart" href="#">
                     <svg width="20.294" height="18.849">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -119,7 +119,7 @@
                 <p class="catalog__characteristics">Диаметр 15 см, высота 10 см</p>
                 <div class="catalog__price">
                   <b>690 руб.</b>
-                  <a class="catalog__button" href="#">
+                  <a class="catalog__button js-add-cart" href="#">
                     <svg width="20.294" height="18.849">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -149,7 +149,7 @@
                 <p class="catalog__characteristics">Диаметр 30 см, высота 30 см</p>
                 <div class="catalog__price">
                   <b>1 500 руб.</b>
-                  <a class="catalog__button" href="#">
+                  <a class="catalog__button js-add-cart" href="#">
                     <svg width="20.294" height="18.849">
                       <use xlink:href="img/sprite.svg#icon-cart"></use>
                     </svg>
@@ -233,18 +233,26 @@
 
     <div class="modal-overlay"></div>
     <section class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form form" action="https://echo.htmlacademy.ru">
-        <label class="form__item">
-          <input type="radio" name="size" value="s" checked> S
-        </label>
-        <label class="form__item">
-          <input type="radio" name="size" value="m"> M
-        </label>
-        <label class="form__item">
-          <input type="radio" name="size" value="l"> L
-        </label>
-        <button class="modal__button form__button" type="submit">Добавить</button>
+      <h2 class="modal__title title">Добавить в корзину</h2>
+      <p class="modal__text">Выберите размер:</p>
+      <form class="modal__form" action="https://echo.htmlacademy.ru">
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-s" type="radio" name="size" value="s" checked>
+            <label for="filter-size-s">S</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-m" type="radio" name="size" value="m">
+            <label for="filter-size-m">M</label>
+          </li>
+          <li class="modal__item">
+            <input class="visually-hidden modal__radio" id="filter-size-l" type="radio" name="size" value="l">
+            <label for="filter-size-l">L</label>
+          </li>
+        </ul>
+        <div class="modal__buttons">
+          <button class="modal__button" type="submit">Добавить</button>
+        </div>
       </form>
     </section>
 
