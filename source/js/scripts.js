@@ -86,7 +86,7 @@ document.addEventListener('mouseup', function(evt) {
     setTimeout(function() {
       overlay.classList.remove('modal-overlay--show');
       modal.classList.remove('modal--show');
-    }, 600);
+    }, 580);
   }
 });
 
@@ -99,6 +99,6 @@ window.addEventListener('keydown', function(evt) {
     setTimeout(function() {
       overlay.classList.remove('modal-overlay--show');
       modal.classList.remove('modal--show');
-    }, 600);
+    }, 580);
   }
 });
