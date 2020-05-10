@@ -69,36 +69,38 @@ var addCartBtns = document.querySelectorAll('.js-add-cart');
 var overlay = document.querySelector('.modal-overlay');
 var modal = document.querySelector('.modal');
 
-for (var j = 0; j < addCartBtns.length; j++) {
-  addCartBtns[j].addEventListener('click', function(evt) {
-    evt.preventDefault();
+if ( addCartBtns && modal ) {
+  for (var j = 0; j < addCartBtns.length; j++) {
+    addCartBtns[j].addEventListener('click', function(evt) {
+      evt.preventDefault();
 
-    modal.classList.remove('modal--out');
-    overlay.classList.add('modal-overlay--show');
-    modal.classList.add('modal--show');
+      modal.classList.remove('modal--out');
+      overlay.classList.add('modal-overlay--show');
+      modal.classList.add('modal--show');
+    });
+  }
+
+  document.addEventListener('mouseup', function(evt) {
+    if ( !modal.contains(evt.target) && modal.classList.contains('modal--show') ) {
+      modal.classList.add('modal--out');
+
+      setTimeout(function() {
+        overlay.classList.remove('modal-overlay--show');
+        modal.classList.remove('modal--show');
+      }, 580);
+    }
+  });
+
+  window.addEventListener('keydown', function(evt) {
+    if (evt.keyCode === 27 && modal.classList.contains('modal--show') ) {
+      evt.preventDefault();
+
+      modal.classList.add('modal--out');
+
+      setTimeout(function() {
+        overlay.classList.remove('modal-overlay--show');
+        modal.classList.remove('modal--show');
+      }, 580);
+    }
   });
 }
-
-document.addEventListener('mouseup', function(evt) {
-  if ( !modal.contains(evt.target) && modal.classList.contains('modal--show') ) {
-    modal.classList.add('modal--out');
-
-    setTimeout(function() {
-      overlay.classList.remove('modal-overlay--show');
-      modal.classList.remove('modal--show');
-    }, 580);
-  }
-});
-
-window.addEventListener('keydown', function(evt) {
-  if (evt.keyCode === 27 && modal.classList.contains('modal--show') ) {
-    evt.preventDefault();
-
-    modal.classList.add('modal--out');
-
-    setTimeout(function() {
-      overlay.classList.remove('modal-overlay--show');
-      modal.classList.remove('modal--show');
-    }, 580);
-  }
-});
