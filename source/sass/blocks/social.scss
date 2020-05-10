@@ -9,7 +9,7 @@
 .social__item {
   display: flex;
   justify-content: center;
-  margin-right: 35px;
+  margin-right: 13.5%;
 
   &:last-child {
     margin-right: 0;
@@ -48,10 +48,14 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-left: auto;
+    width: 22%;
   }
 
   .social__list {
     margin-bottom: 0;
+  }
+
+  .social__item {
+    margin-right: 35px;
   }
 }

@@ -3,7 +3,7 @@
   background-color: $bg-gray;
 }
 
-.main-footer__logo {
+.main-footer__logo-wrapper {
   display: none;
 }
 
@@ -18,8 +18,13 @@
     align-items: center;
   }
 
-  .main-footer__logo {
+  .main-footer__logo-wrapper {
     display: block;
+    width: 39%;
+  }
+
+  .main-footer__logo {
+    display: inline-block;
 
     svg {
       width: 102px;
