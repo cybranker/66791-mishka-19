@@ -38,6 +38,16 @@ if (slider) {
     sliderItems[i].style.width = sliderListWidth + 'px';
   }
 
+  window.addEventListener('resize', function(evt) {
+    sliderListWidth = sliderList.offsetWidth;
+
+    if (sliderListWidth <= 1000) {
+      for (var i = 0; i < sliderItems.length; i++) {
+        sliderItems[i].style.width = sliderListWidth + 'px';
+      }
+    }
+  });
+
   slidePrev.addEventListener('click', function() {
     if (position < 0) {
       slideNext.disabled = false;
