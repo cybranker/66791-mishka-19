@@ -18,6 +18,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    display: flex;
     order: 1;
     margin-top: 0;
 

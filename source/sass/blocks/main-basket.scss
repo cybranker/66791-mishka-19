@@ -50,6 +50,8 @@
 
 @media (min-width: $tablet-width) {
   .main-basket {
+    display: flex;
+    width: 265px;
     order: 3;
     border-top: none;
     border-left: 1px solid $border-gray;

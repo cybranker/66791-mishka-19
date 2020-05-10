@@ -50,8 +50,9 @@
 
 @media (min-width: $tablet-width) {
   .main-search {
+    display: flex;
     order: 2;
-    margin-left: auto;
+    margin-left: calc(100% - 460px);
     border-top: none;
     border-left: 1px solid $border-gray;
 
@@ -63,7 +64,6 @@
   .main-search__button {
     padding: 0;
     width: 80px;
-    height: 87px;
 
     span {
       display: none;
