@@ -1,14 +1,15 @@
 .container {
   position: relative;
-  width: 260px;
+  width: 81.25%;
+  max-width: 668px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
 @media (min-width: $tablet-width) {
   .container {
-    width: 668px;
-    padding: 0 50px;
+    width: 87%;
+    max-width: 1050px;
+    margin: 0 auto;
   }
 }
 

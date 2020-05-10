@@ -138,10 +138,14 @@
     margin-bottom: 370px;
   }
 
+  .promo__title .br-mob {
+    display: none;
+  }
+
   .promo__list {
     flex-direction: row;
-    width: 668px;
-    padding: 0 50px;
+    width: 87%;
+    max-width: 1050px;
     margin: 0 auto;
   }
 
