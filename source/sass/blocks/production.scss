@@ -37,6 +37,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
@@ -80,7 +81,7 @@
 
   .production__video {
     order: -1;
-    height: 455px;
+    min-height: 455px;
   }
 
   .production__wrapper {

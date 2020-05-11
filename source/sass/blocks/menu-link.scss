@@ -24,6 +24,8 @@
 
 @media (min-width: $desktop-width) {
   .menu-link {
+    display: flex;
+    align-items: center;
     font-size: 17px;
   }
 }

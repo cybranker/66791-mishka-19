@@ -11,7 +11,8 @@
   text-decoration: none;
 
   svg {
-    fill: #63d1bb;
+    fill: $mint-color;
+    transition: all 0.3s ease;
   }
 
   &[href]:hover,
@@ -44,14 +45,12 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
-    margin-left: 85px;
+    width: 39%;
     padding-top: 0;
     border-top: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .copyright {
-    margin-left: 275px;
+  .copyright__link {
+    justify-content: flex-end;
   }
 }

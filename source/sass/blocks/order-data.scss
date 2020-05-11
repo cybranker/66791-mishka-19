@@ -73,6 +73,7 @@
       &::before {
         left: -65px;
         border: 2px solid $gray-color;
+        transition: all 0.3s ease;
       }
 
       &:hover {
@@ -137,6 +138,7 @@
     top: 50%;
     transform: translateY(-50%);
     fill: rgba($black-color, 0.2%);
+    transition: all 0.3s ease;
   }
 }
 
@@ -379,6 +381,7 @@
   }
 
   .order-data__textarea {
+    width: 75%;
     margin-bottom: 50px;
   }
 

@@ -8,19 +8,16 @@
 
 @media (min-width: $tablet-width) {
   .site-list__item {
-    margin-right: 30px;
+    margin-right: 6.82%;
     border-top: none;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .site-list__item {
+    display: flex;
     margin-right: 0;
-    padding: 32px 35px;
+    padding: 0 35px;
     border-right: 1px solid $border-gray;
 
     &:first-child {

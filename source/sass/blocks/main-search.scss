@@ -5,6 +5,10 @@
 .main-search__button {
   position: relative;
 
+  span {
+    transition: all 0.3s ease;
+  }
+
   &[href]:hover,
   &[href]:focus,
   &[href]:active {
@@ -35,6 +39,7 @@
   opacity: 0.2;
 
   fill: #221f1f;
+  transition: all 0.3s ease;
 }
 
 .main-search__button[href]:hover .main-search__search-icon,
@@ -50,8 +55,9 @@
 
 @media (min-width: $tablet-width) {
   .main-search {
+    display: flex;
     order: 2;
-    margin-left: auto;
+    margin-left: calc(100% - 460px);
     border-top: none;
     border-left: 1px solid $border-gray;
 
@@ -63,7 +69,6 @@
   .main-search__button {
     padding: 0;
     width: 80px;
-    height: 87px;
 
     span {
       display: none;

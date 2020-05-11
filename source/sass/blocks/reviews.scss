@@ -58,6 +58,7 @@
       transform: translate(-50%, -50%);
       background-repeat: no-repeat;
       background-position: 0 0;
+      transition: all 0.3s ease;
     }
 
     &:disabled {
