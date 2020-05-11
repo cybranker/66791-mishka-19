@@ -21,6 +21,7 @@ img {
 a {
   font: inherit;
   color: $black-color;
+  transition: all 0.3s ease;
 
   &[href]:hover,
   &[href]:focus {

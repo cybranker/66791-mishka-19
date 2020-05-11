@@ -100,6 +100,7 @@
   border: 2px solid rgba($gray-color, 0.1%);
   cursor: pointer;
   user-select: none;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {
@@ -133,6 +134,7 @@
   text-transform: uppercase;
   cursor: pointer;
   user-select: none;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {

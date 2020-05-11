@@ -5,6 +5,10 @@
 .main-basket__button {
   position: relative;
 
+  span {
+    transition: all 0.3s ease;
+  }
+
   &[href]:hover,
   &[href]:focus,
   &[href]:active {
@@ -35,6 +39,7 @@
   opacity: 0.2;
 
   fill: #221f1f;
+  transition: all 0.3s ease;
 }
 
 .main-basket__button[href]:hover .main-basket__cart-icon,

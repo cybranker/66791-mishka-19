@@ -11,6 +11,7 @@
   border: none;
   outline: none;
   border-bottom: 2px solid $black-color;
+  transition: all 0.3s ease;
 
   &:hover,
   &:focus {

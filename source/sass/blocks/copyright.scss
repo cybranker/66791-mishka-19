@@ -12,6 +12,7 @@
 
   svg {
     fill: $mint-color;
+    transition: all 0.3s ease;
   }
 
   &[href]:hover,
