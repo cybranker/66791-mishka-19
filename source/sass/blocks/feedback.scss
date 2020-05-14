@@ -163,7 +163,7 @@
   .feedback {
     position: relative;
     width: 1050px;
-    padding: 70px 0 105px;
+    padding: 74px 0 105px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -185,7 +185,7 @@
     box-sizing: border-box;
 
     &:last-child {
-      margin-top: -56px;
+      margin-top: -52px;
     }
   }
 
@@ -198,7 +198,7 @@
   .feedback__title {
     margin-top: 70px;
     margin-left: 0;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-size: 53px;
     line-height: 1.08;
 
@@ -219,8 +219,8 @@
     }
 
     td {
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-top: 16px;
+      padding-bottom: 16px;
     }
   }
 

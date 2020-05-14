@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    margin-bottom: -42px;
+    margin-bottom: -44px;
   }
 
   .main-header__wrapper {
@@ -122,6 +122,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-header {
+    margin-bottom: -44px;
+  }
+
   .main-header__wrapper {
     width: 1050px;
     margin: 0 auto;
@@ -132,7 +136,7 @@
     width: 149px;
     height: 72px;
     margin: 7px 0;
-    margin-left: auto;
+    margin-left: 76px;
     order: 2;
 
     img {

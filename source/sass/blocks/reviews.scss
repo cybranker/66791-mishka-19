@@ -173,7 +173,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews__container {
-    min-height: 380px;
+    padding-top: 70px;
+    min-height: 390px;
   }
 
   .reviews__list {
@@ -187,6 +188,14 @@
 
   .reviews__text {
     padding-right: 100px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
+  }
+
+  .reviews__write {
+    margin-top: 8px;
+  }
+
+  .reviews__buttons {
+    margin-top: -110px;
   }
 }

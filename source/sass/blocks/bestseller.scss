@@ -148,10 +148,10 @@
 
 @media (min-width: $desktop-width) {
   .bestseller {
-    padding: 0 0 100px;
+    padding: 0 0 92px;
 
     &::before {
-      bottom: calc(100% - 18px);
+      bottom: calc(100% - 12px);
       height: 34px;
     }
   }
@@ -160,11 +160,11 @@
     justify-content: flex-start;
     margin-bottom: 0;
     position: relative;
-    top: 115px;
+    top: 120px;
   }
 
   .bestseller__title {
-    margin-left: 52px;
+    margin-left: 5px;
   }
 
   .bestseller__flag {
@@ -173,6 +173,7 @@
   }
 
   .bestseller__description {
+    margin-bottom: 52px;
     font-size: 17px;
     line-height: 1.76;
   }
@@ -183,7 +184,7 @@
   }
 
   .bestseller__wrapper > .bestseller__wrapper-left {
-    padding-top: 165px;
+    padding-top: 162px;
   }
 
   .bestseller__image {
@@ -192,6 +193,6 @@
   }
 
   .bestseller__wrapper-right {
-    margin-top: -415px;
+    margin-top: -442px;
   }
 }

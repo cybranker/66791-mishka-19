@@ -162,7 +162,7 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    padding-top: 170px;
+    padding-top: 155px;
     background-image: url("../img/hero-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -173,7 +173,7 @@
   .promo__title {
     font-size: 53px;
     line-height: 1.08;
-    margin-bottom: 350px;
+    margin-bottom: 356px;
   }
 
   .promo__list {
