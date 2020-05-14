@@ -100,12 +100,12 @@
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: flex-end;
   }
 
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .production {
-      align-items: flex-end;
+      align-items: flex-start;
     }
   }
 
@@ -113,7 +113,7 @@
     order: 2;
     width: 365px;
     margin: 0;
-    margin-bottom: -145px;
+    margin-top: 42px;
     padding-top: 55px;
     padding-left: 60px;
     padding-right: 70px;
@@ -124,6 +124,7 @@
   .production__video {
     width: 680px;
     margin-right: auto;
+    margin-top: -145px;
   }
 
   .production__wrapper {
@@ -134,6 +135,7 @@
   }
 
   .production__text {
+    margin-top: 35px;
     margin-bottom: 45px;
   }
 }
