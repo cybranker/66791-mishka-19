@@ -14,35 +14,35 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  a {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    width: 25px;
+.social__link {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 25px;
 
+  svg {
+    fill: #231f20;
+    transition: all 0.3s ease;
+  }
+
+  &[href]:hover,
+  &[href]:focus,
+  &[href]:active {
+    opacity: 1;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
     svg {
-      fill: #231f20;
-      transition: all 0.3s ease;
+      fill: $very-dark-mint-color;
     }
+  }
 
-    &[href]:hover,
-    &[href]:focus,
-    &[href]:active {
-      opacity: 1;
-    }
-
-    &[href]:hover,
-    &[href]:focus {
-      svg {
-        fill: $very-dark-mint-color;
-      }
-    }
-
-    &[href]:active {
-      svg {
-        fill: rgba($very-dark-mint-color, 0.3%);
-      }
+  &[href]:active {
+    svg {
+      fill: rgba($very-dark-mint-color, 0.3%);
     }
   }
 }
