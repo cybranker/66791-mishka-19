@@ -1,5 +1,5 @@
 .production {
-  margin-bottom: 60px;
+  margin-bottom: 62px;
   border: 1px solid $light-gray-color;
 }
 
@@ -69,11 +69,12 @@
   .production {
     display: flex;
     flex-direction: column;
+    margin-bottom: 65px;
   }
 
   .production__title {
-    padding-left: 110px;
-    margin: 35px 0;
+    padding-left: 105px;
+    margin: 38px 0 32px;
     font-size: 20px;
     line-height: 1.2;
     background-position: 45px 50%;
@@ -89,7 +90,7 @@
   }
 
   .production__text {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
     font-size: 15px;
     line-height: 2;
   }
