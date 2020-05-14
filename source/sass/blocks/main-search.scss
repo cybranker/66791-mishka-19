@@ -71,7 +71,7 @@
     width: 80px;
 
     span {
-      display: none;
+      @include visually-hidden;
     }
   }
 
