@@ -17,6 +17,7 @@
   .zigzag-line {
     &::before {
       height: 17px;
+      transform: rotate(180deg);
     }
   }
 }

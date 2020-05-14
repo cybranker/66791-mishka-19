@@ -13,7 +13,7 @@
 }
 
 .promo__title {
-  margin-bottom: 120px;
+  margin-bottom: 125px;
   font-size: 27px;
   line-height: 1.11;
   text-align: center;
@@ -48,7 +48,7 @@
   svg {
     position: absolute;
     top: 50%;
-    right: 30px;
+    right: 34px;
     transform: translateY(-50%);
     opacity: 0.5;
     fill: $dark-mint-color;
@@ -110,7 +110,7 @@
 }
 
 .promo__item .promo__interior-icon {
-  right: 40px;
+  right: 35px;
   width: 40px;
   height: 62px;
 }
@@ -122,7 +122,7 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    padding-top: 160px;
+    padding-top: 152px;
     background-image: url("../img/hero-tablet@1x.jpg");
     background-position: 50% 0;
 
@@ -135,7 +135,7 @@
   .promo__title {
     font-size: 43px;
     line-height: 1.16;
-    margin-bottom: 370px;
+    margin-bottom: 375px;
   }
 
   .promo__title .br-mob {
@@ -153,7 +153,7 @@
     width: 50%;
 
     a {
-      padding: 35px;
+      padding: 28px 35px;
       font-size: 20px;
       line-height: 1.5;
     }

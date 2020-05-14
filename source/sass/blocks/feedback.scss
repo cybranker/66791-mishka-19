@@ -9,19 +9,19 @@
 }
 
 .feedback__container {
-  padding-top: 40px;
+  padding-top: 36px;
 }
 
 .feedback__title {
   display: block;
   font-size: 18px;
   line-height: 1.67;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
 }
 
 .feedback__address {
   font-style: normal;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
 
   table {
     width: 100%;
@@ -85,18 +85,19 @@
 
 @media (min-width: $tablet-width) {
   .feedback {
-    padding-bottom: 60px;
+    padding-bottom: 58px;
   }
 
   .feedback__container {
-    padding-top: 60px;
+    padding-top: 55px;
     text-align: center;
   }
 
   .feedback__title {
     width: 100%;
     position: relative;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 36px;
     font-size: 43px;
     line-height: 1.16;
     text-align: left;
@@ -121,7 +122,7 @@
     text-align: left;
     font-size: 17px;
     line-height: 1.76;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
 
     tbody {
       display: flex;
@@ -134,6 +135,8 @@
     }
 
     td {
+      line-height: 1.76;
+
       &:first-child {
         width: 23%;
       }

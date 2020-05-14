@@ -14,7 +14,7 @@
 .advantages__item {
   min-height: 35px;
   padding-top: 55px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   font-size: 17px;
   line-height: 1.18;
   font-weight: 700;
@@ -43,18 +43,22 @@
 
   &--support {
     background-image: url("../img/icon-feature-rocket.svg");
-    background-position: 0 3px;
+    background-position: -5px 4px;
   }
 
   &--supplied {
     background-image: url("../img/icon-feature-gift.svg");
-    background-position: 2px 0;
+    background-position: 2px 2px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding-bottom: 25px;
+  }
+
   .advantages__container {
-    padding-top: 55px;
+    padding-top: 46px;
   }
 
   .advantages__list {
@@ -71,7 +75,7 @@
   }
 
   .advantages__item {
-    margin-bottom: 60px;
+    margin-bottom: 56px;
     padding-right: 20px;
     font-size: 20px;
     line-height: 1.1;
