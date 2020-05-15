@@ -2,7 +2,7 @@
 svg4everybody();
 
 // Picture element HTML5 shiv
-document.createElement( "picture" );
+document.createElement('picture');
 
 // Menu
 var headerMain = document.querySelector('.main-header');

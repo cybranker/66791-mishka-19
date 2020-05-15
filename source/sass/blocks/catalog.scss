@@ -153,13 +153,14 @@
   .catalog__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .catalog__item {
     flex-direction: column;
     width: 318px;
     margin-bottom: 55px;
-    margin-right: 50px;
+    margin-right: 48px;
     min-height: 660px;
 
     &:nth-child(3n) {
