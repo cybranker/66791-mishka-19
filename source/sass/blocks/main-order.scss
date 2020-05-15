@@ -1,3 +1,9 @@
 .main-order .page-title {
   margin-bottom: 26px;
 }
+
+@media (min-width: $tablet-width) {
+  .main-order .page-title {
+    margin-bottom: 70px;
+  }
+}
