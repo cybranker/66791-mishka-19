@@ -158,12 +158,16 @@
   .catalog__item {
     flex-direction: column;
     width: 318px;
-    margin-bottom: 60px;
+    margin-bottom: 55px;
     margin-right: 50px;
     min-height: 660px;
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 55px;
     }
   }
 
@@ -174,9 +178,14 @@
   .catalog__wrapper {
     width: 100%;
     flex-grow: 1;
+    padding: 22px 28px 28px;
   }
 
   .catalog__characteristics {
     margin-bottom: 15px;
+  }
+
+  .catalog__price {
+    padding-top: 24px;
   }
 }
