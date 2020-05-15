@@ -41,7 +41,7 @@
 }
 
 .order-data__options .order-data__title {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .order-data__option--additionally .order-data__title {
@@ -67,8 +67,8 @@
     label {
       position: relative;
       display: block;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 8px;
+      padding-bottom: 15px;
 
       &::before {
         left: -65px;
@@ -143,7 +143,7 @@
 }
 
 .order-data__list--type .order-data__option {
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .order-data__label {
