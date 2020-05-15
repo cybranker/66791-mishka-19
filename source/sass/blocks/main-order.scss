@@ -7,3 +7,9 @@
     margin-bottom: 70px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-order .page-title {
+    margin-bottom: 122px;
+  }
+}
