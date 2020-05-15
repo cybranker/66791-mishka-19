@@ -452,6 +452,10 @@
         right: 4px;
       }
     }
+
+    &--additionally {
+      padding-top: 46px;
+    }
   }
 
   .order-data__option--phone .form-control,
@@ -477,11 +481,5 @@
   .order-data__wrapper {
     padding-left: 16.67%;
     padding-right: 16.67%;
-  }
-
-  .order-data__option {
-    &--additionally {
-      padding-top: 46px;
-    }
   }
 }
